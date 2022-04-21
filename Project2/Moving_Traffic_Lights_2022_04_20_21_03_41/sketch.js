@@ -2,7 +2,8 @@ let noisePos = 0;
 let angle = 0;
 
 function setup() {
-  createCanvas(600, 600);
+  let canvas = createCanvas(600, 600);
+canvas.parent('sketch-container');
   //setupGif(40);
 }
 
