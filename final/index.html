@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="p5.js"></script>
+    <script src="p5.sound.min.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -50,6 +52,14 @@
             height: 300px;
             margin: 60 auto;
         }
+
+        #sketch-container {
+  width: 250px;
+  height: 150px;
+  position:relative;
+  left: 250px;
+  top: -50px;
+        }
        
            
     </style>
@@ -62,6 +72,10 @@
       <p id="intro">  </p>
 <div id="video">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/hlVXOC6a3ME" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<div id="sketch-container">
+    <script src="sketch.js"></script>
 </div>
       
 
