@@ -1,11 +1,10 @@
 let Mountains = [];
 let yoff = 0.0;
-
 let backgroundColor;
 
 function setup() {
-  createCanvas(500,400);
-  noCursor();
+  let canvas = createCanvas(500, 400);
+canvas.parent('p5js');
   
    for (let i = 0; i < 5; i++) {
     Mountains.push(new mountains(i * 100, height / 2));
@@ -26,6 +25,9 @@ function draw() {
     Mountains[i].move();
     Mountains[i].display();
   }
+   ocean() 
+  
+   
 }
 
 
@@ -38,6 +40,7 @@ class mountains {
   }
   
   move() {
+    
     this.x = this.x + 2;
     if (this.x > width) {
       this.x = 0;
@@ -47,7 +50,7 @@ class mountains {
   }
      display() {
        push();
-   translate(0,-30);
+   translate(0,-130);
        
         fill(240, 242, 255);
   strokeWeight(0);
@@ -87,6 +90,7 @@ class mountains {
   }
 }
  function ocean() {
+
   //wave source: https://p5js.org/examples/math-noise-wave.html
 
   //waves

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Tapestry&display=swap" rel="stylesheet">
+    <script src="p5.js"></script>
+    <script src="p5.sound.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Global Warming's Effects on the Arctic</title>
+    <style>
+        html {
+            background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+            background-image: url(Images/arctic1.jpg)  ;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        #container {
+            width: 1090px;
+            height: 2050px;
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.5);
+            position: relative;
+            
+        }
+       
+        p {
+           
+            border: 5px groove rgba(255, 255, 255, 0.5);
+            background-color: #8eb3fd;
+            border-radius: 1px;
+            margin: 35px 0;
+           
+           
+            
+        }
+     
+        
+        #intro {
+           position: relative;
+           text-align: center;
+            left: 170px;
+            top: 950px;
+            width: 700px;
+            height: 300px;
+            margin: 60 auto;
+            font-size: 25px;
+            font-weight: 500;
+            font-stretch: expanded;
+        }
+
+        #p5js {
+            position: relative;
+           text-align: center;
+            left: 75px;
+            top: -1000px;
+            width: 700px;
+            height: 300px;
+            margin: 60 auto;
+        }
+
+        #image1 {
+            position: relative;
+           text-align: center;
+            left: 300px;
+            top: 0px;
+            width: 1000px;
+            height: 400px;
+            margin: 60 auto;
+            
+        }
+
+        #image2 {
+            position: relative;
+           text-align: center;
+            left: 200px;
+            top: -200px;
+            width: 500px;
+            height: 400px;
+            margin: 60 auto;
+            
+        }
+       
+           
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1 style=" text-align: center; font-style: oblique ; font-size: 50px;"> A Closer Look</h1>
+        
+        <p id="intro">The three images above show the changes in artic as compared to the information the graphs are projecting. As can be seen from above statistics state that as years progress, the amount of ice left in the artic gradually decrease. In correlation to such fact is the change in climate. The artics importance to the health of the Earth is that it prevents overheating. Consistant deline in the overall health of artic means that we as humans will be facing some of the most abnormal seasons and temperarture rise over the next years.</p>
+
+
+        <div id="image1">
+            <img src="images/graph.jpg" alt="">
+        </div>
+
+        <div id="image2">
+            <img src="images/The-graph-of-average-global-temperature-rise.png" alt="">
+       </div>
+        
+       <div id="p5js">
+           <script src="sketch.js"></script>
+        </div>
+
+          
+</body>
+</html>
